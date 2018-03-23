@@ -6,38 +6,50 @@
     $error:map-get($theme, error);
   
     .hx-default-color {
-        background-color: rgb(240, 240, 240);
-        
+        background: linear-gradient(gray, darken(gray, 20%));
+    }
+    .hx-default-color:active {
+        background: linear-gradient(lighten(gray, 40%), lighten(gray, 20%)); 
     }
     .hx-error-color {
-        background-color: $error;
+        background: linear-gradient($error, darken($error, 20%));
+    }
+    .hx-error-color:active {
+        background: linear-gradient(lighten($error, 40%), lighten($error, 20%));
     }
     .hx-primary-color {
-        background-color: $primary;
+        background: linear-gradient($primary, darken($primary, 20%));
+    }
+    .hx-primary-color:active {
+        background: linear-gradient(lighten($primary, 40%), lighten($primary, 20%));
     }
     .hx-secondary-color {
-        background-color: $secondary;
+        background: linear-gradient($secondary, darken($secondary, 20%));
+    }
+    .hx-secondary-color:active {
+        background: linear-gradient(lighten($secondary, 40%), lighten($secondary, 20%));
     }
     .hx-warning-color {
-        background-color: $warning;
+        background: linear-gradient($warning, darken($warning, 20%));
+    }
+    .hx-warning-color:active {
+        background: linear-gradient(lighten($warning, 40%), lighten($warning, 20%));
     }
     .hx-success-color {
-        background-color: $success;
+        background: linear-gradient($success, darken($success, 20%));
+    }
+    .hx-success-color:active {
+        background: linear-gradient(lighten($success, 40%), lighten($success, 20%));
     }
 }
 
 .hx-raised-button {
     width: 100px;
     height: 100px;
-    border: 5px solid rgba(55,55,55, 0.2);
+    border: 4px solid rgba(55,55,55, 0.2);
     border-radius: 5px;
 }
 
 .hx-raised-button:hover {
-    border: 5px solid rgba(0,0,0, 0.4);
-}
-
-.hx-raised-button:active {
-    -webkit-filter: invert(50%);
-    filter: invert(50%);
+    border: 4px solid rgba(0,0,0, 0.4);
 }
