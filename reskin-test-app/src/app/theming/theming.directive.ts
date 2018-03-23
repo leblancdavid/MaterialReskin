@@ -9,7 +9,6 @@ export class ThemingDirective implements OnInit {
   @Input() hxTheming: ColorPalette;
   constructor(private renderer: Renderer2, private hostElement: ElementRef) 
   {
-    console.log('hxtheming created');
   }
 
   ngOnInit(): void {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ColorPalette } from '../../theming/color-palette.enum';
 
 @Component({
@@ -8,11 +8,12 @@ import { ColorPalette } from '../../theming/color-palette.enum';
 })
 export class RaisedButtonComponent implements OnInit {
 
-  private colorPalette: ColorPalette;
-  constructor() { }
+  @Input() color: ColorPalette;
+  constructor() {
+    this.color = ColorPalette.Default;
+   }
 
   ngOnInit() {
-    this.colorPalette = ColorPalette.Secondary;
   }
 
 }
