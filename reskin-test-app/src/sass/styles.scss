@@ -2,3 +2,31 @@
 
 @import './variables';
 @import './mixins';
+
+@import '../app/buttons/raised-button/raised-button.component';
+
+@mixin hx-theme($theme) {
+    @include raised-button-theme($theme);
+}
+
+@function hx-create-theme($primary, $secondary, $warning, $success, $error) {
+    @return (
+      primary: $primary,
+      secondary: $secondary,
+      warning: $warning,
+      success: $success,
+      error: $error,
+    );
+  }
+
+$primary: blue;
+$secondary:  purple;
+$warning: yellow;
+$success: green;
+$error: red;
+
+$theme: hx-create-theme($primary, $secondary, $warning, $success, $error);
+
+// Include all theme styles for the components.
+@include hx-theme($theme);
+

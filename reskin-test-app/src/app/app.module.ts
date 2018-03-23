@@ -4,18 +4,19 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ButtonsModule } from './buttons/buttons.module';
-import { ThemingDirective } from './theming/theming.directive';
+import { ThemingModule } from './theming/theming.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ThemingDirective
   ],
   imports: [
     BrowserModule,
-    ButtonsModule
+    ButtonsModule,
+    ThemingModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
