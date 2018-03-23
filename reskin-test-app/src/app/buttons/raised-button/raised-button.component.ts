@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'mr-raised-button',
+  selector: 'hx-raised-button',
   templateUrl: './raised-button.component.html',
-  styleUrls: ['./raised-button.component.css']
+  styleUrls: ['./raised-button.component.scss']
 })
 export class RaisedButtonComponent implements OnInit {
 

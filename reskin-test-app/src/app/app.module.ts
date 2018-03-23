@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ButtonsModule } from './buttons/buttons.module';
+import { ThemingDirective } from './theming/theming.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ThemingDirective
   ],
   imports: [
     BrowserModule,

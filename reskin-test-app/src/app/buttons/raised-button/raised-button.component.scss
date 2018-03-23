@@ -1,0 +1,31 @@
+@mixin raised-button-theme($theme) {
+    $primary: map-get($theme, primary);
+    $secondary: map-get($theme, secondary);
+    $warning: map-get($theme, warning);
+    $success: map-get($theme, success);
+    $error:map-get($theme, error);
+  
+    .hx-default-color {
+        background-color: rgb(240, 240, 240);
+    }
+    .hx-error-color {
+        background-color: $error;
+    }
+    .hx-primary-color {
+        background-color: $primary;
+    }
+    .hx-secondary-color {
+        background-color: $secondary;
+    }
+    .hx-warning-color {
+        background-color: $warning;
+    }
+    .hx-success-color {
+        background-color: $success;
+    }
+}
+
+.hx-raised-button {
+    width: 100px;
+    height: 100px;
+}
