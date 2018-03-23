@@ -4,9 +4,11 @@
 @import './mixins';
 
 @import '../app/buttons/raised-button/raised-button.component';
+@import '../app/checkboxes/checkbox/checkbox.component';
 
 @mixin hx-theme($theme) {
     @include raised-button-theme($theme);
+    @include checkbox-theme($theme);
 }
 
 @function hx-create-theme($primary, $secondary, $warning, $success, $error) {
