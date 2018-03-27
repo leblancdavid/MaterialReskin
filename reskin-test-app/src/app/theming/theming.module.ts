@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ThemingDirective } from './theming.directive';
+import { ThemableDirective } from './themable.directive';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    ThemingDirective
+    ThemableDirective
   ],
   exports: [
-    ThemingDirective
+    ThemableDirective
   ],
 })
 export class ThemingModule { }
