@@ -5,7 +5,7 @@
     $success: map-get($theme, success);
     $error:map-get($theme, error);
   
-    .hx-default-color, div.hx-default-color:after  {
+    .hx-default-color {
         background: linear-gradient(gray, darken(gray, 20%));
     }
     .hx-default-color:active {
@@ -18,14 +18,12 @@
         background: linear-gradient(lighten($error, 40%), lighten($error, 20%));
     }
     .hx-primary-color {
-		background: linear-gradient($primary, darken($primary, 20%));
-		&:after {
-			background: linear-gradient($primary, darken($primary, 20%));
-		}
-	}
-    .hx-primary-color:active {
-        background: linear-gradient(lighten($primary, 40%), lighten($primary, 20%));
+        background: linear-gradient($primary, darken($primary, 20%));
     }
+    div.hx-chevron-button-tip {
+        background: linear-gradient($primary, darken($primary, 20%)) !important;
+    }
+
     .hx-secondary-color {
         background: linear-gradient($secondary, darken($secondary, 20%));
     }
@@ -59,7 +57,22 @@
 	padding-left: 10px;
 }
 
-.hx-chevron-button:after {
+// .hx-chevron-button:after {
+//     content: '';
+// 	position: relative;
+// 	top: 0; 
+// 	right: -21px; /*half of square's length*/
+// 	width: 42px; 
+// 	height: 42px;
+// 	/*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+// 	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+// 	if diagonal required = 1; length = 1/1.414 = 0.707*/
+// 	transform: scale(0.707) rotate(45deg);
+// 	z-index: 1;
+// 	border-radius: 0 5px 0 50px;
+// }
+
+.hx-chevron-button-tip {
     content: '';
 	position: relative;
 	top: 0; 
@@ -71,9 +84,8 @@
 	if diagonal required = 1; length = 1/1.414 = 0.707*/
 	transform: scale(0.707) rotate(45deg);
 	z-index: 1;
-	border-radius: 0 5px 0 50px;
+    border-radius: 0 5px 0 50px;
 }
-
 .hx-chevron-button:before {
 	content: '';
     left: 100%;
