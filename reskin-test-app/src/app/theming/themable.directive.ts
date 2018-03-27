@@ -2,17 +2,17 @@ import { Directive, ElementRef, Input, OnInit, Renderer2 } from '@angular/core';
 import { ColorPalette } from './color-palette.enum';
 
 @Directive({
-  selector: '[hxTheming]'
+  selector: '[hxThemable]'
 })
-export class ThemingDirective implements OnInit {
+export class ThemableDirective implements OnInit {
 
-  @Input() hxTheming: ColorPalette;
+  @Input() hxThemable: ColorPalette;
   constructor(private renderer: Renderer2, private hostElement: ElementRef) 
   {
   }
 
   ngOnInit(): void {
-    switch(this.hxTheming)
+    switch(this.hxThemable)
     {
       case ColorPalette.Default:
         this.renderer.addClass(this.hostElement.nativeElement, 'hx-default-color');
