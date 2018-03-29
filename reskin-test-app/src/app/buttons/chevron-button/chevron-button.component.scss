@@ -5,20 +5,20 @@
     $success: map-get($theme, success);
     $error:map-get($theme, error);
   
-    // .hx-chevron-button-bg-top.hx-primary-color {
-    //     stop-color: $primary !important;
-    // }
-    // .hx-chevron-button-bg-bottom.hx-primary-color {
-    //     stop-color: darken($primary, 20%) !important;
-    // }
+    .hx-chevron-button.hx-primary-color>svg>defs>linearGradient>stop:first-child {
+        stop-color: $primary;
+    }
+    .hx-chevron-button.hx-primary-color>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken($primary, 20%);
+    }
 
-    // .hx-chevron-button-bg-top.hx-default-color {
-    //     stop-color: gray !important;
+    .hx-chevron-button.hx-default-color>svg>defs>linearGradient>stop:first-child {
+        stop-color: gray;
         
-    // }
-    // .hx-chevron-button-bg-bottom.hx-default-color {
-    //     stop-color: darken(gray, 20%) !important;
-    // }
+    }
+    .hx-chevron-button.hx-default-color>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken(gray, 20%);
+    }
     
 }
 
