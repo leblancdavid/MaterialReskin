@@ -5,22 +5,4 @@
     $success: map-get($theme, success);
     $error:map-get($theme, error);
   
-    .hx-default-color {
-        color: gray;
-    }
-    .hx-error-color {
-        background: linear-gradient($error, darken($error, 20%));
-    }
-    .hx-primary-color {
-        color: $primary;
-    }
-    .hx-secondary-color {
-        background: linear-gradient($secondary, darken($secondary, 20%));
-    }
-    .hx-warning-color {
-        background: linear-gradient($warning, darken($warning, 20%));
-    }
-    .hx-success-color {
-        background: linear-gradient($success, darken($success, 20%));
-    }
 }

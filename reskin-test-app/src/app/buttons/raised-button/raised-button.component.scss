@@ -5,40 +5,40 @@
     $success: map-get($theme, success);
     $error:map-get($theme, error);
   
-    .hx-default-color {
+    .hx-raised-button .hx-default-color {
         background: linear-gradient(gray, darken(gray, 20%));
     }
-    .hx-default-color:active {
+    .hx-raised-button .hx-default-color:active {
         background: linear-gradient(lighten(gray, 40%), lighten(gray, 20%)); 
     }
-    .hx-error-color {
+    .hx-raised-button .hx-error-color {
         background: linear-gradient($error, darken($error, 20%));
     }
-    .hx-error-color:active {
+    .hx-raised-button .hx-error-color:active {
         background: linear-gradient(lighten($error, 40%), lighten($error, 20%));
     }
-    .hx-primary-color {
+    .hx-raised-button .hx-primary-color {
         background: linear-gradient($primary, darken($primary, 20%));
     }
-    .hx-primary-color:active {
+    .hx-raised-button .hx-primary-color:active {
         background: linear-gradient(lighten($primary, 40%), lighten($primary, 20%));
     }
-    .hx-secondary-color {
+    .hx-raised-button .hx-secondary-color {
         background: linear-gradient($secondary, darken($secondary, 20%));
     }
-    .hx-secondary-color:active {
+    .hx-raised-button .hx-secondary-color:active {
         background: linear-gradient(lighten($secondary, 40%), lighten($secondary, 20%));
     }
-    .hx-warning-color {
+    .hx-raised-button .hx-warning-color {
         background: linear-gradient($warning, darken($warning, 20%));
     }
-    .hx-warning-color:active {
+    .hx-raised-button .hx-warning-color:active {
         background: linear-gradient(lighten($warning, 40%), lighten($warning, 20%));
     }
-    .hx-success-color {
+    .hx-raised-button .hx-success-color {
         background: linear-gradient($success, darken($success, 20%));
     }
-    .hx-success-color:active {
+    .hx-raised-button .hx-success-color:active {
         background: linear-gradient(lighten($success, 40%), lighten($success, 20%));
     }
 }
