@@ -89,6 +89,19 @@
 .hx-chevron-button:hover>svg>g>path {
     stroke: gray;
 }
+
+.hx-chevron-disabled>svg>defs>linearGradient>stop:first-child {
+    stop-color: lightgray;
+}
+.hx-chevron-disabled>svg>defs>linearGradient>stop:last-child {
+    stop-color: darken(lightgray, 20%);
+}
+.hx-chevron-disabled>svg>g>path {
+    stroke: darken(lightgray, 30%);
+}
+.hx-chevron-disabled:hover>svg>g>path {
+    stroke: gray;
+}
 // .hx-primary-color>svg>defs>linearGradient>stop:last-child {
 //     stop-color: darken(red, 20%);
 // }

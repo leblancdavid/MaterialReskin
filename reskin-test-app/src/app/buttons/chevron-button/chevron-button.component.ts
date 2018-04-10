@@ -20,6 +20,8 @@ export class ChevronButtonComponent implements OnInit {
   @Input() color: ColorPalette;
   private advance: boolean;
 
+  @Input() disabled: boolean;
+
   constructor(private elementRef: ElementRef) {
     this.advance = true;
     if(elementRef.nativeElement.hasAttribute('hx-chevron-back')) {
