@@ -12,6 +12,65 @@
         stop-color: darken($primary, 20%);
     }
 
+    .hx-chevron-button.hx-primary-color:active>svg>defs>linearGradient>stop:first-child {
+        stop-color: lighten($primary, 10%)
+    }
+    .hx-chevron-button.hx-primary-color:active>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken($primary, 10%);
+    }
+
+    .hx-chevron-button.hx-secondary-color>svg>defs>linearGradient>stop:first-child {
+        stop-color: $secondary;
+    }
+    .hx-chevron-button.hx-secondary-color>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken($secondary, 20%);
+    }
+    .hx-chevron-button.hx-secondary-color:active>svg>defs>linearGradient>stop:first-child {
+        stop-color: lighten($secondary, 10%)
+    }
+    .hx-chevron-button.hx-secondary-color:active>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken($secondary, 10%);
+    }
+
+    .hx-chevron-button.hx-error-color>svg>defs>linearGradient>stop:first-child {
+        stop-color: $error;
+    }
+    .hx-chevron-button.hx-error-color>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken($error, 20%);
+    }
+    .hx-chevron-button.hx-error-color:active>svg>defs>linearGradient>stop:first-child {
+        stop-color: lighten($error, 10%)
+    }
+    .hx-chevron-button.hx-error-color:active>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken($error, 10%);
+    }
+
+    .hx-chevron-button.hx-warning-color>svg>defs>linearGradient>stop:first-child {
+        stop-color: $warning;
+    }
+    .hx-chevron-button.hx-warning-color>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken($warning, 20%);
+    }
+    .hx-chevron-button.hx-warning-color:active>svg>defs>linearGradient>stop:first-child {
+        stop-color: lighten($warning, 10%)
+    }
+    .hx-chevron-button.hx-warning-color:active>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken($warning, 10%);
+    }
+
+    .hx-chevron-button.hx-success-color>svg>defs>linearGradient>stop:first-child {
+        stop-color: $success;
+    }
+    .hx-chevron-button.hx-success-color>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken($success, 20%);
+    }
+    .hx-chevron-button.hx-success-color:active>svg>defs>linearGradient>stop:first-child {
+        stop-color: lighten($success, 10%)
+    }
+    .hx-chevron-button.hx-success-color:active>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken($success, 10%);
+    }
+
     .hx-chevron-button.hx-default-color>svg>defs>linearGradient>stop:first-child {
         stop-color: gray;
         
@@ -19,9 +78,17 @@
     .hx-chevron-button.hx-default-color>svg>defs>linearGradient>stop:last-child {
         stop-color: darken(gray, 20%);
     }
-    
+    .hx-chevron-button.hx-default-color:active>svg>defs>linearGradient>stop:first-child {
+        stop-color: lighten(gray, 10%)
+    }
+    .hx-chevron-button.hx-default-color:active>svg>defs>linearGradient>stop:last-child {
+        stop-color: darken(gray, 10%);
+    }
 }
 
+.hx-chevron-button:hover>svg>g>path {
+    stroke: gray;
+}
 // .hx-primary-color>svg>defs>linearGradient>stop:last-child {
 //     stop-color: darken(red, 20%);
 // }
