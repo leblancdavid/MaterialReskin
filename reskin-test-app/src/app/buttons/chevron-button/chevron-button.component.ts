@@ -13,10 +13,6 @@ export class ChevronButtonComponent implements OnInit {
   private getFillIdUrl() {
     return 'url(#' + this.fillId + ')';
   }
-  private pathId = Guid.newGuid();
-  private getPathIdUrl() {
-    return 'url(#' + this.pathId + ')';
-  }
   @Input() color: ColorPalette;
   private advance: boolean;
 

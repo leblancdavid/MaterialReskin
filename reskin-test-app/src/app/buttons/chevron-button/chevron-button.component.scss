@@ -1,3 +1,7 @@
+hx-chevron-button {
+    display: flex;
+}
+
 @mixin chevron-button-theme($theme) {
     $primary: map-get($theme, primary);
     $secondary: map-get($theme, secondary);
@@ -85,7 +89,10 @@
         stop-color: darken(gray, 10%);
     }
 }
-
+.hx-chevron-button {
+    width: auto;
+    position: relative;
+}
 .hx-chevron-button:hover>svg>g>path {
     stroke: gray;
 }
@@ -102,6 +109,13 @@
 .hx-chevron-disabled:hover>svg>g>path {
     stroke: gray;
 }
-// .hx-primary-color>svg>defs>linearGradient>stop:last-child {
-//     stop-color: darken(red, 20%);
-// }
+
+.hx-chevron-button-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

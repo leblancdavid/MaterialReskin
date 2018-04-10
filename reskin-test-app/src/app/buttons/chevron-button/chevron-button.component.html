@@ -1,5 +1,9 @@
 <div class="hx-chevron-button" [hxThemable]="color"
     [class.hx-chevron-disabled]="disabled">
+    <div class="hx-chevron-button-content">
+        <ng-content ></ng-content>
+    </div>
+    
   <svg *ngIf="advance"
     xmlns="http://www.w3.org/2000/svg" 
     xmlns:xlink="http://www.w3.org/1999/xlink" 
