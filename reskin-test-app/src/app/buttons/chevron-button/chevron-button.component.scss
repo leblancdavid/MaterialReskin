@@ -8,19 +8,23 @@ hx-chevron-button {
     $warning: map-get($theme, warning);
     $success: map-get($theme, success);
     $error:map-get($theme, error);
-  
+    $font-dark-color: map-get($theme, font-dark-color);
+    $font-light-color: map-get($theme, font-light-color);
+
     .hx-chevron-button.hx-primary-color>svg>defs>linearGradient>stop:first-child {
         stop-color: $primary;
     }
     .hx-chevron-button.hx-primary-color>svg>defs>linearGradient>stop:last-child {
         stop-color: darken($primary, 20%);
     }
-
     .hx-chevron-button.hx-primary-color:active>svg>defs>linearGradient>stop:first-child {
         stop-color: lighten($primary, 10%)
     }
     .hx-chevron-button.hx-primary-color:active>svg>defs>linearGradient>stop:last-child {
         stop-color: darken($primary, 10%);
+    }
+    .hx-chevron-button.hx-primary-color>.hx-chevron-button-content {
+        color: choose-contrast-color($primary,  $font-light-color, $font-dark-color);
     }
 
     .hx-chevron-button.hx-secondary-color>svg>defs>linearGradient>stop:first-child {
@@ -35,6 +39,9 @@ hx-chevron-button {
     .hx-chevron-button.hx-secondary-color:active>svg>defs>linearGradient>stop:last-child {
         stop-color: darken($secondary, 10%);
     }
+    .hx-chevron-button.hx-secondary-color>.hx-chevron-button-content {
+        color: choose-contrast-color($secondary,  $font-light-color, $font-dark-color);
+    }
 
     .hx-chevron-button.hx-error-color>svg>defs>linearGradient>stop:first-child {
         stop-color: $error;
@@ -47,6 +54,9 @@ hx-chevron-button {
     }
     .hx-chevron-button.hx-error-color:active>svg>defs>linearGradient>stop:last-child {
         stop-color: darken($error, 10%);
+    }
+    .hx-chevron-button.hx-error-color>.hx-chevron-button-content {
+        color: choose-contrast-color($error,  $font-light-color, $font-dark-color);
     }
 
     .hx-chevron-button.hx-warning-color>svg>defs>linearGradient>stop:first-child {
@@ -61,6 +71,9 @@ hx-chevron-button {
     .hx-chevron-button.hx-warning-color:active>svg>defs>linearGradient>stop:last-child {
         stop-color: darken($warning, 10%);
     }
+    .hx-chevron-button.hx-warning-color>.hx-chevron-button-content {
+        color: choose-contrast-color($warning,  $font-light-color, $font-dark-color);
+    }
 
     .hx-chevron-button.hx-success-color>svg>defs>linearGradient>stop:first-child {
         stop-color: $success;
@@ -73,6 +86,9 @@ hx-chevron-button {
     }
     .hx-chevron-button.hx-success-color:active>svg>defs>linearGradient>stop:last-child {
         stop-color: darken($success, 10%);
+    }
+    .hx-chevron-button.hx-success-color>.hx-chevron-button-content {
+        color: choose-contrast-color($success,  $font-light-color, $font-dark-color);
     }
 
     .hx-chevron-button.hx-default-color>svg>defs>linearGradient>stop:first-child {
@@ -87,6 +103,9 @@ hx-chevron-button {
     }
     .hx-chevron-button.hx-default-color:active>svg>defs>linearGradient>stop:last-child {
         stop-color: darken(gray, 10%);
+    }
+    .hx-chevron-button.hx-default-color>.hx-chevron-button-content {
+        color: choose-contrast-color(gray,  $font-light-color, $font-dark-color);
     }
 }
 .hx-chevron-button {
@@ -118,4 +137,11 @@ hx-chevron-button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
 }

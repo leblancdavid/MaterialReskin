@@ -3,6 +3,7 @@
 
 @import './variables';
 @import './mixins';
+@import './contrast';
 
 @import '../app/buttons/raised-button/raised-button.component';
 @import '../app/buttons/chevron-button/chevron-button.component';
@@ -14,13 +15,16 @@
     @include chevron-button-theme($theme);
 }
 
-@function hx-create-theme($primary, $secondary, $warning, $success, $error) {
+@function hx-create-theme($primary, $secondary, $warning, $success, $error, 
+  $font-dark-color, $font-light-color) {
     @return (
       primary: $primary,
       secondary: $secondary,
       warning: $warning,
       success: $success,
       error: $error,
+      font-dark-color: $font-dark-color,
+      font-light-color: $font-light-color
     );
   }
 
@@ -29,8 +33,11 @@ $secondary:  purple;
 $warning: yellow;
 $success: green;
 $error: red;
+$font-dark-color: black;
+$font-light-color: white;
 
-$theme: hx-create-theme($primary, $secondary, $warning, $success, $error);
+
+$theme: hx-create-theme($primary, $secondary, $warning, $success, $error, $font-dark-color, $font-light-color);
 
 // Include all theme styles for the components.
 @include hx-theme($theme);
