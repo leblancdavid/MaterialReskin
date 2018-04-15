@@ -1,5 +1,5 @@
 <div class="hx-chevron-button" [hxThemable]="color"
-    [class.hx-chevron-disabled]="disabled">
+    [class.hx-chevron-disabled]="disabled" (click)="preventClickWhenDisabled($event)">
     <div class="hx-chevron-button-content">
         <ng-content ></ng-content>
     </div>

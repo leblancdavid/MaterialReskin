@@ -112,9 +112,6 @@ hx-chevron-button {
     width: auto;
     position: relative;
 }
-.hx-chevron-button:hover>svg>g>path {
-    stroke: gray;
-}
 
 .hx-chevron-disabled>svg>defs>linearGradient>stop:first-child {
     stop-color: lightgray;
@@ -127,6 +124,9 @@ hx-chevron-button {
 }
 .hx-chevron-disabled:hover>svg>g>path {
     stroke: gray;
+}
+.hx-chevron-disabled>.hx-chevron-button-content {
+    color: gray;
 }
 
 .hx-chevron-button-content {

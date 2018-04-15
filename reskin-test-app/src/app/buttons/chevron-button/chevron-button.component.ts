@@ -33,4 +33,11 @@ export class ChevronButtonComponent implements OnInit {
   ngOnInit() {
   }
 
+  preventClickWhenDisabled(event: Event) {
+    if(this.disabled) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }
+
 }

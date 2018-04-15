@@ -9,4 +9,9 @@ import { ColorPalette } from './theming/color-palette.enum';
 export class AppComponent {
   title = 'app';
   colors = ColorPalette
+
+  buttonClicked(event: Event) {
+    console.log(event);
+  }
 }
+
